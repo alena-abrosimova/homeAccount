@@ -1,0 +1,27 @@
+<div class="title-block">
+  <h3 class="title pull-left">
+    Страница истории <span class="sparkline bar"></span>
+  </h3>
+</div>
+<div class="pull-right">
+  <button class="btn-sm btn btn-primary-outline" (click)="openFilter()">
+    <i class="fa fa-filter"></i>
+  </button>
+</div>
+<div *ngIf="!isLoaded" class="text-center"><mha-loader></mha-loader></div>
+<div *ngIf="isLoaded">
+  <mha-history-chart [data]="chartData"></mha-history-chart>
+  <mha-history-events
+    [categories]="categories"
+    [events]="filteredEvents"
+  ></mha-history-events>
+  <div *ngIf="isFilterVisible">
+    <mha-history-filter
+    (onFilterApply)="onFilterApply($event)"
+    (onFilterCancel)="onFilterCancel()"
+    [categories]="categories"
+    ></mha-history-filter>
+  </div>
+
+</div>
+

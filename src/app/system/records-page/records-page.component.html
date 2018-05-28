@@ -1,0 +1,29 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница записей <span class="sparkline bar"></span>
+  </h3>
+</div>
+
+<section class="section text-center" *ngIf="!isLoaded">
+  <mha-loader></mha-loader>
+</section>
+
+<section class="section" *ngIf="isLoaded">
+  <div class="row">
+    <div class="col-md-6">
+      <mha-add-event [categories]="categories"></mha-add-event>
+    </div>
+    <div class="col-md-6">
+      <mha-add-category (onCategoryAdd)="newCategoryAdded($event)"></mha-add-category>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mha-edit-category
+          [categories]="categories"
+          (onCategoryEdit)="categoryWasEdited($event)"
+        ></mha-edit-category>
+      </div>
+    </div>
+
+  </div>
+</section>

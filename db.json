@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    }
+  ],
+  "bill": {
+    "value": 172700,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "name": "Машина",
+      "capacity": 7000,
+      "id": 3
+    },
+    {
+      "name": "Техника",
+      "capacity": 10000,
+      "id": 4
+    },
+    {
+      "name": "Одежда",
+      "capacity": 15000,
+      "id": 5
+    },
+    {
+      "name": "Обувь",
+      "capacity": 10000,
+      "id": 6
+    },
+    {
+      "name": "Детское",
+      "capacity": 10000,
+      "id": 7
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 6,
+      "date": "23.03.2018 15:31:58",
+      "description": "Туфли",
+      "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 16000,
+      "category": 4,
+      "date": "23.03.2018 16:55:34",
+      "description": "Телефон",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 1300,
+      "category": 7,
+      "date": "23.03.2018 16:56:19",
+      "description": "Памперсы",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 10000,
+      "category": 5,
+      "date": "23.03.2018 16:57:26",
+      "description": "Пальто",
+      "id": 9
+    },
+    {
+      "type": "outcome",
+      "amount": 500,
+      "category": 1,
+      "date": "29.03.2018 13:34:51",
+      "description": "Интернет",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 500,
+      "category": 7,
+      "date": "30.03.2018 12:25:51",
+      "description": "Питание",
+      "id": 11
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 1,
+      "date": "01.04.2018 18:09:49",
+      "description": "ЖКХ",
+      "id": 12
+    }
+  ]
+}
